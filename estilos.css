@@ -264,6 +264,7 @@ ul li a:hover {
     position: fixed;
     bottom: 10px;
     right: 5px;
+    transition: all 1s;
 }
 
 .logowp:hover {
@@ -276,6 +277,7 @@ ul li a:hover {
     position: fixed;
     bottom: 80px;
     right: 5px;
+    transition: all 1s;
 }
 
 .logoig:hover {
