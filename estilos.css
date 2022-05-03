@@ -21,7 +21,7 @@ body {
         "fotosInicio1 fotosInicio2 fotosInicio3"
         "presentacionInicio presentacionInicio presentacionInicio"
         "footer footer footer";
-}
+ }
 
 .header {
     grid-area: header;
@@ -160,15 +160,18 @@ body {
 }
 
 .enlaceig {
-    text-align: center;}
+    text-align: center;
+}
 
 .enlaceig a {
     text-decoration: none;
     color: white;
 }
-.enlaceig:hover{
+
+.enlaceig:hover {
     transform: scale(1.1, 1.1);
 }
+
 .mail {
     display: flex;
     justify-content: flex-end;
@@ -186,6 +189,7 @@ body {
     display: inline-flex;
     justify-content: flex-start;
 }
+
 .titulo {
     color: black;
     letter-spacing: 10px;
@@ -315,7 +319,7 @@ h3 {
 }
 
 /*mediaquerries para celular*/
-@media screen and (max-width:767px) {
+@media (max-width: 576px) {
     .contenedorInicio {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, auto);
@@ -351,7 +355,23 @@ h3 {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+/*mediaquerries para tablets and desktop*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .contenedorInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "bannerSecundario"
+            "fotosInicio1"
+            "fotosInicio2"
+            "fotosInicio3"
+            "presentacionInicio"
+            "footer";
+    }
+
     .contenedorBikinis {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(9, auto);
